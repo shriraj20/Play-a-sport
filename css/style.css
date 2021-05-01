@@ -1,6 +1,10 @@
 /*--
     Common Css
 --*/
+form {
+  position: relative;
+  right: 100px;
+}
 body {
   font-size: 14px;
   font-weight: 300;
