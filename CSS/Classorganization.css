@@ -1,3 +1,5 @@
 form{
-    position: center;
+    position: fixed;
+    up: 100px;
+    down: 100px;
 }
