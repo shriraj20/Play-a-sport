@@ -1,5 +1,16 @@
 form{
-    position: fixed;
-    up: 100px;
-    down: 100px;
+  position: fixed;
+  top: 200px;
+  left: 450px;
 }
+form{
+  width: 500px;
+  /* height: 100px; */
+  /* color: black; */
+  /* background: black; */
+  border: 1000px;
+  border-color: coral;
+}
+/* .admin{
+  background: black;
+} */
