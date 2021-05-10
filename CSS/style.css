@@ -1,18 +1,3 @@
-#body {
-    text-align: left;
-}
-
-#title h3 {
-    text-align: center;
-}
-
-#body img {
-    display: block;
-    margin-left: auto;
-    background-color: #1C7FF2;
-    height: 400px;
-}
-
-.bold {
-    font-weight: bold;
+body {
+  text-align: right;  
 }
