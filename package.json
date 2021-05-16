@@ -1,0 +1,42 @@
+{
+  "name": "play-a-sport",
+  "version": "0.0.1",
+  "description": "- code for css - maps   - style.css - style.css ## html - nothing curently ## images - to lasy to type so all the images ## js - main.js ## plugins - don't delete that. Thats needed for bootstrap ## Scss - same as the plugins, don't delete # Services 1. Play with random players 2. Learn form affiliated companies 3. Get private lesson from affiliated teachers # Work ## Pranav - Database, home page ## Shriraj - login page, **teacher partner manager**, teacher partner manager # Help [Help desk](https://newaccount1614656112224.freshdesk.com/support/home) # Patrion [Donate](https://www.patreon.com/user?u=54510118)",
+  "main": "index.js",
+  "dependencies": {
+    "debug": "^3.2.7",
+    "is-fullwidth-code-point": "^1.0.0",
+    "nopt": "^3.0.6",
+    "npm-bundled": "^1.1.2",
+    "npm-normalize-package-bin": "^1.0.1",
+    "npm-packlist": "^1.4.8",
+    "number-is-nan": "^1.0.1",
+    "oauth-sign": "^0.9.0",
+    "object-assign": "^4.1.1",
+    "os-homedir": "^1.0.2",
+    "os-tmpdir": "^1.0.2",
+    "osenv": "^0.1.5",
+    "path-is-absolute": "^1.0.1",
+    "performance-now": "^2.1.0",
+    "process-nextick-args": "^2.0.1",
+    "psl": "^1.8.0",
+    "punycode": "^2.1.1",
+    "qs": "^6.5.2",
+    "safe-buffer": "^5.1.2",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shriraj20/Play-a-sport.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shriraj20/Play-a-sport/issues"
+  },
+  "homepage": "https://github.com/shriraj20/Play-a-sport#readme"
+}

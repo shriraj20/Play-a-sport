@@ -2,14 +2,7 @@ form{
   position: fixed;
   top: 200px;
   left: 450px;
-}
-form{
-  width: 500px;
-  /* height: 100px; */
-  /* color: black; */
-  /* background: black; */
-  border: 1000px;
-  border-color: coral;
+  width: 300px;
 }
 /* .admin{
   background: black;
