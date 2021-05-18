@@ -33,10 +33,10 @@
     "type": "git",
     "url": "git+https://github.com/shriraj20/Play-a-sport.git"
   },
-  "author": "",
+  "author": "Coders of Play a Sport",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shriraj20/Play-a-sport/issues"
   },
-  "homepage": "https://github.com/shriraj20/Play-a-sport#readme"
+  "homepage": "https://play-a-sport.epiccoderss.repl.co/"
 }
