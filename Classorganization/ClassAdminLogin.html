@@ -10,7 +10,37 @@
     <link rel="stylesheet" href="../CSS/Classorganization.css">
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
 </head>
+<section>
+<style>
+  form-group{
+    border-left: 100px solid;
+  }
+</style>
+</section>
 <body class="admin">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Epic Coders</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../Classorganization/ClassAdminLogin.html">Class Admin<span class="sr-only">(current)</span></a>
+          </li>
+      </ul>
+    </div>
+  </nav>
 <form>
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
@@ -20,7 +50,7 @@
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button ocnclick="location.href='../Classorganization/ClassDashboard'" type="submit" class="btn btn-primary">Submit</button>
 </form>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
