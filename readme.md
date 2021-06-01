@@ -1,7 +1,7 @@
 [![GitHub license](https://img.shields.io/github/license/shriraj20/Play-a-sport)](https://github.com/shriraj20/Play-a-sport/blob/master/LICENSE)
 ![GitHub top language](https://img.shields.io/github/languages/top/shriraj20/Play-a-sport)
 
-#Contributors
+# Contributors
 - Shriraj Dash
 - Pranav Kethireddy
 # Services
