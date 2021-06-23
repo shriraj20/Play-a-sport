@@ -1,13 +1,13 @@
-# Services
+  # Services
 1. Play with random players
 2. Learn form affiliated companies
 3. Get private lesson from affiliated teachers
 # Work
 ## Stage 1
 - Pranav
-  - home page
+  - home page, Db
 - Shriraj
-  - login page, teacher partner page
+  - Admin Signup, teacher partner page, Db
 ## Stage 2
 - tbd
 # Help
