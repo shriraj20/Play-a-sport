@@ -6,3 +6,11 @@ package-lock.json
 package-lock.json
 .node_modules
 package-lock.json
+shop.html
+node_modules/detect-libc/bin/detect-libc.js
+node_modules/jsonwebtoken/node_modules/.bin/semver
+node_modules/jsonwebtoken/node_modules/semver/CHANGELOG.md
+node_modules/jsonwebtoken/node_modules/semver/LICENSE
+node_modules/jsonwebtoken/node_modules/semver/range.bnf
+node_modules/nopt/examples/my-program.js
+node_modules/nopt/package.json
