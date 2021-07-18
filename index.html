@@ -1,163 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>play a sport</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Importing fonts -->
-    <!-- Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
-
-    <!-- Importing CSSs and JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/ClassDashboard.css">
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
-    <link href="js/index.js">
-    <title>Home</title>
-
-    <section>
-      <style>
-        div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.floatRight{ 
-  float:right;
-  margin-left:20px
-}
-
-      </style>
-    </section>
-    
 </head>
-<!--Nav bar Start-->
+<section>
+    <style>
+        form-group{
+            border-left: 100px solid;
+        }
+    </style>
+</section>
+<body class="admin">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Epic Coders</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Classorganization/ClassDashboard.html">Class Admin</a>
-          </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Login.html">Login</a>
-          </li>
-      </ul>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="../Classorganization/ClassAdminLogin.html">Class Admin<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
     </div>
-  </nav>
-<body id="body">
-  <section style="background-color: aqua;">
-    <h2 style="text-align: center;">Welcome to Play a Sport. A place to MEET Friends, NEW Talents, and to Grow!</h2>
+</nav>
+<form onsubmit="return login(this);">
+    <div class="form-group">
+        <label for="Email">Email address</label>
+        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+</form>
 
-  </section>
+<script>
+    function login(form) {
+        var script = document.createElement("script");
+        script.type = "text/javascript"
+        script.src = "../js/login.js"
+        form.submit.setAttribute("disabled", "disabled");
+        form.submit.innerHTML = "Loading...";
+        var email = document.getElementById("Email").toString();
+        localStorage.setItem("vOneLocalStorage", email);
+        var response = localStorage.getItem("trueORFalse ");
+        console.log(response)
+        if(response === "true") {
+            alert("yes");
+        }else{
+            alert("Incorrect Username")
+            form.submit.innerHTML = "Submit";
+        }
 
-  <section style="background-color: aquamarine;">
-    <h2 style="text-align: center;">Features:</h2>
-    <div class="responsive" style="background-color: aquamarine;">
-      <div class="gallery">
-          <img src="https://i.imgur.com/hzCyksO.png" alt="Lock" width="600" height="400">
-        </a>
-        <div class="desc">Everything saved on in our databases are secured so your private information is seen by you, us, and people and you agree to share your info with</div>
-      </div>
-    </div>
-    <div class="responsive" style="background-color: aquamarine;">
-      <div class="gallery">
-          <img src="https://i.imgur.com/or6QiZk.jpg" alt="Money" width="600" height="400">
-        </a>
-        <div class="desc">Currently everything right now is Free but you can supporte us on our <a href="https://www.patreon.com/user?u=54510118">Patreon</a> which will benifit Epic Coders&copy; and it will also benefit you as we can grow!</div>
-      </div>
-    </div>
-    <div class="responsive" style="background-color: aquamarine;">
-      <div class="gallery">
-          <img src="https://i.imgur.com/XMgBDSo.png" alt="Lightning" width="600" height="400">
-        </a>
-        <div class="desc">We are trying to make Play a Sport as fast as possible. So you don't need to wait to enjoy your game! Also we want to make everything easy on you</div>
-      </div>
-    </div>
-    <div class="responsive" style="background-color: aquamarine;">
-      <div class="gallery">
-          <img src="https://i.imgur.com/54VcGEZ.png" alt="People" width="600" height="400">
-        </a>
-        <div class="desc">We serve to give as freindly staff as possible. If you ever need anything please feel free to contact our support team. We can contact them in our discord and freshdesk!</div>
-        <!-- You can contact them on our <a href="https://newaccount1614656112224.freshdesk.com/support/home">Fresh Desk</a> or on our <a href="https://discord.gg/M9MkGghykW">Discord</a> -->
-      </div>
-    </div>
-  </section>
+        console.log(email);
+    }
+</script>
 
-  <section style="background-color: grey">
-    <footer>
-      <h3>Epic Coders&COPY;</h3>
-     <a href="https://discord.gg/M9MkGghykW">
-      <img src="https://i.imgur.com/zMDOihP.png" alt="" style="height: 100px;">
-    </a>
-    <a href="https://www.linkedin.com/company/epic-coders/">
-    <img src="https://i.imgur.com/vNTz6gB.png"" alt="" style="height: 100px;">
-    </a>
-    </footer>
-  </section>
-  <script> (function (d, w, c) { if(!d.getElementById("spd-busns-spt")) { var n = d.getElementsByTagName('script')[0], s = d.createElement('script'); var loaded = false; s.id = "spd-busns-spt"; s.async = "async"; s.setAttribute("data-self-init", "false"); s.setAttribute("data-init-type", "opt"); s.src = 'https://cdn.freshbots.ai/assets/share/js/freshbots.min.js'; s.setAttribute("data-client", "96cab04a9405f3c2add65ca54a016d92c72c2e59"); s.setAttribute("data-bot-hash", "f145f33c7c7b474c8e543e91360b0bb17d24d304"); s.setAttribute("data-env", "prod"); s.setAttribute("data-region", "us"); if (c) { s.onreadystatechange = s.onload = function () { if (!loaded) { c(); } loaded = true; }; } n.parentNode.insertBefore(s, n); } }) (document, window, function () { Freshbots.initiateWidget({ autoInitChat: false, getClientParams: function () { return ; } }, function(successResponse) { }, function(errorResponse) { }); }); 
-  </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+<script> (function (d, w, c) { if(!d.getElementById("spd-busns-spt")) { var n = d.getElementsByTagName('script')[0], s = d.createElement('script'); var loaded = false; s.id = "spd-busns-spt"; s.async = "async"; s.setAttribute("data-self-init", "false"); s.setAttribute("data-init-type", "opt"); s.src = 'https://cdn.freshbots.ai/assets/share/js/freshbots.min.js'; s.setAttribute("data-client", "96cab04a9405f3c2add65ca54a016d92c72c2e59"); s.setAttribute("data-bot-hash", "f145f33c7c7b474c8e543e91360b0bb17d24d304"); s.setAttribute("data-env", "prod"); s.setAttribute("data-region", "us"); if (c) { s.onreadystatechange = s.onload = function () { if (!loaded) { c(); } loaded = true; }; } n.parentNode.insertBefore(s, n); } }) (document, window, function () { Freshbots.initiateWidget({ autoInitChat: false, getClientParams: function () { return ; } }, function(successResponse) { }, function(errorResponse) { }); }); </script>
 </body>
 </html>
